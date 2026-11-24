@@ -45,8 +45,5 @@ app.use("/",(req,res)=>{
 res.get("Welcome to the E-commerce API");
 })
 
-const port=process.env.PORT;
-app.listen(port,()=>{
-console.log('server is running at port ' +port);
 
-})
+export default app;
