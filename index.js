@@ -28,9 +28,6 @@ const corsOptions = {
   origin: [
     "https://shopco-blond-three.vercel.app",
     "https://e-commerce-admin-dashboard-wheat.vercel.app",
-    "https://shopco-rafaqat-ullah.vercel.app",
-    "https://shopco-git-main-rafaqat-ullah.vercel.app",
-    "https://shop-ftuta29zg-rafaqat-ullah.vercel.app",
   ],
   credentials: true,
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
