@@ -26,7 +26,7 @@ const app = express();
 // CORS
 const corsOptions = {
   origin: [
-    "https://shopco-blond-three.vercel.app",
+    "https://shopco-git-main-rafaqat-ullah.vercel.app/",
     "https://e-commerce-admin-dashboard-wheat.vercel.app",
   ],
   credentials: true,
