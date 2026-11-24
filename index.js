@@ -26,12 +26,8 @@ const app = express();
 // CORS
 const corsOptions = {
   origin: [
-    "http://localhost:5173",
-    "http://localhost:3000",
-
-    // Add your deployed frontend URLs here
-    // "https://your-customer-frontend.vercel.app",
-    // "https://your-admin-frontend.vercel.app",
+    "https://e-commerce-admin-dashboard-wheat.vercel.app/",
+    "https://shopco-blond-three.vercel.app/",
   ],
   credentials: true,
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
