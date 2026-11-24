@@ -90,3 +90,9 @@ app.use("/api/admin/orders", adminOrderRoutes);
 
 // Export Express app for Vercel
 module.exports = app;
+
+// Allow the same file to run locally with `npm start`.
+if (require.main === module) {
+  const port = process.env.PORT || 5000;
+  app.listen(port, () => console.log(`Server listening on port ${port}`));
+}
