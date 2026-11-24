@@ -11,7 +11,7 @@ const adminOrderRoutes = require("./routes/adminOrderRoutes");
 const userRoutes =require("./routes/userRoutes.js");
 const cookieParser = require("cookie-parser");
 const { getDashboardStats } = require('./Controllers/adminDashboardController.js');
-const app=express();
+const app = express();
 
 const corsOptions = {
   origin: [
@@ -41,9 +41,7 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/admin/orders", adminOrderRoutes);
 app.use("/api/admin/orders", adminOrderRoutes);
-app.use("/",(req,res)=>{
-res.get("Welcome to the E-commerce API");
-})
+
 
 
 export default app;
