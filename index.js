@@ -41,7 +41,13 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/admin/orders", adminOrderRoutes);
 app.use("/api/admin/orders", adminOrderRoutes);
-
+// Root route
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "SHOP.CO Backend API is running successfully 🚀",
+  });
+});
 
 
 export default app;
